@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Semantic Layer naming tool</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css?v=2" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="/js/vendor/modernizr.js"></script>
+    <script src="/js/jquery-2.1.3.min.js"></script>
+
+</head>
+<body>
+
+<button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown">Dropdown Button</button><br>
+<ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">
+  <li><a href="#">This is a link</a></li>
+  <li><a href="#">This is another</a></li>
+  <li><a href="#">Yet another</a></li>
+</ul>
+
+<div class="row page_comments">    
+    <div class="large-2 columns">
+
+      <label>CSS Attribute
+        <select>
+          <option value="">None</option>
+          <option value="color">color</option>
+          <option value="bgColor">Background Color</option>
+          <option value="borderColor">Border Color</option>
+        </select>
+      </label>
+
+    </div>
+    <div class="large-2 columns">
+
+      <label>Rank
+        <select>
+          <option value="">None</option>
+          <option value="Primary">Primary</option>
+          <option value="Secondary">Secondary</option>
+          <option value="Teritary">Teritary</option>
+        </select>
+      </label>
+
+    </div>
+    <div class="large-2 columns">
+
+      <label>Emotion
+        <select>
+          <option value="">None</option>
+          <option value="Success">Success</option>
+          <option value="Fail">Fail</option>
+          <option value="Error">Error</option>
+          <option value="Warning">Warning</option>
+          <option value="Info">Info</option>
+          <option value="Attention">Attention</option>
+        </select>
+      </label>
+
+    </div>
+    <div class="large-2 columns">
+
+      <label>State
+        <select>
+          <option value="">None</option>
+          <option value="Actionable">Actionable</option>
+          <option value="Fail">Fail</option>
+          <option value="Error">Error</option>
+          <option value="Warning">Warning</option>
+          <option value="Info">Info</option>
+          <option value="Attention">Attention</option>
+        </select>
+      </label>
+
+    </div>
+    <div class="large-2 columns">
+
+      <label>Type
+        <select>
+          <option value="">None</option>
+          <option value="Button">Button</option>
+          <option value="Link">Link</option>
+          <option value="Element">Element</option>
+          <option value="Text">Text</option>
+          <option value="Stripe">Stripe</option>
+          <option value="Stroke">Stroke</option>
+          <option value="Icon">Icon</option>
+          <option value="Modal">Modal</option>
+        </select>
+      </label>
+
+    </div>
+
+</div>
+
+<div class="row page_comments">    
+    <div class="large-3 columns"> </div>
+    <div class="large-6 columns nameResult"></div>
+    <div class="large-3 columns"> </div>
+</div>
+
+
+
+<script src="/js/vendor/jquery.js"></script>
+<script src="/js/foundation.min.js"></script>
+<script>
+
+$(function() {
+    MENU.init();
+    COLLAGE.init();
+    TALKS.init();
+    $(document).foundation();
+});
+$(window).load(function() {
+    COLLAGE.startLayout();
+});
+</script>
+
+</body>
+</html>
